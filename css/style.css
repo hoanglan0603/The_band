@@ -1,0 +1,382 @@
+
+/* -----------coommon---------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear:both;
+}
+
+.text-white{
+    color: #fff !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half {
+    width: 50%;
+}
+.col-full {
+    width:100%;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ------------main--------------- */
+
+/* -----------css header----------------- */
+#header {
+    height: 46px;
+    background-color: #000;
+    color: #fff;
+    position: fixed !important;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+ position: relative;
+ 
+}
+#nav > li {
+   display: inline-block;
+}
+.subnav > li {
+    display: block;
+}
+#nav > li > a {
+    text-transform: uppercase;
+}
+#nav li a {
+    color : #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    
+}
+#nav .subnav > li:hover,
+#nav > li:hover > a {
+    background-color: #ccc;
+    display: block;
+    color: #000;
+   
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .nav-arrow-down {
+    line-height: 46px;
+    position: relative;
+    top: -3px;
+}
+#nav .subnav {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top : 100%;
+    left: 0;
+    z-index: 1;
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height:38px;
+    
+}
+#nav .subnav:hover {
+    display: block;
+}
+
+/* -----------------css search button -----------------*/
+#header .menu-btn,
+#header .search-btn {
+  /* display:inline-block; */
+  float: right;
+  /* top: 0;
+  right: 0;
+  width: 50px;
+  height: 46px;
+  text-align: center;
+  box-sizing: border-box; */
+  padding: 0 21px;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+#header .menu-btn{
+    display: none;
+}
+#header .menu-icon,
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#header .search-btn:hover {
+    background-color:coral;
+    cursor:pointer;
+}
+#header .menu-btn:hover {
+    background-color: #ccc;
+}
+#header .menu-btn:hover .menu-icon {
+    color: #000;
+}
+/* ---------------slider--------------------- */
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/html_css/web_band/img/ny.jpeg') top center /cover no-repeat;
+   
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 0;
+    color:#fff;
+    text-align: center;
+    padding: 48px 16px;
+    width: 100%;
+    
+}
+.text-heading{
+    padding-bottom: 10px;
+    font-size: 24px;
+
+}
+.text-description{
+    font-size:18px;
+
+}
+/* --------------content css ----------------- */
+
+
+#content .content-section {
+    margin-top: 19px ;
+    margin-bottom: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#content .heading-section {
+    color: #000;
+    padding: 10px 0px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+
+}
+#content .description-section {
+    margin: 15px 0px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .text-section {
+    text-align: justify;
+    margin: 15px auto;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+#content {
+   
+}
+/* --------------------content img--------------- */
+#content .member-list { 
+    padding : 32px 0px;
+}
+#content .section-item {
+    float:left;
+    text-align: center;
+    width : 33.33333%;
+    
+}
+#content .image {
+    width : 154px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+#content .section-name {
+
+}
+
+/* ------------content ticket---------------- */
+#content .tour-ticket {
+   background-color: #000;
+   
+}
+#content .tickets-lists {
+    background-color: #fff;
+    margin-top: 32px;
+}
+#content .tickets-lists li {
+    padding: 8px 16px;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+    text-align: left;
+}
+#content .sold-out {
+    background-color: #F44336;
+    color: #fff;
+    padding: 0px 8px;
+    margin-left: 16px;
+}
+    
+#content .quantity {
+    width: 24px;
+    height: 24px;
+    float: right;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    margin-right: 18px;
+}
+
+#content .tour-places {   
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+#content .member-tour {
+    background-color: #fff;
+    width: 33.33333%;
+    text-align: center;
+    background-clip: content-box;
+    
+}
+#content .place-img {
+    width: 100%;
+}
+
+#content .place-img:hover {
+    opacity: 0.60;
+}
+
+#content .infomation {
+    font-size: 15px;
+    margin :15px 0px;
+    text-align: left;
+    padding: 0px 16px;
+    padding-bottom: 8px;
+}
+#content .place {
+    margin :15px 0px;
+    font-weight: 800;
+}
+
+#content .time {
+    margin :15px 0px;
+    opacity: 0.60;
+}
+
+#content .description {
+    margin :15px 0px;
+}
+
+#content .btn{
+    text-align: left;
+    padding: 8px 16px;
+    width: 108px;
+    height: 39px;
+    background-color: #000;
+    color:#fff;
+    text-decoration: none;
+}
+
+#content .btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+ul.col1-info {
+    text-align: left;
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.col1-infor .contact-icon {
+    width: 30px;
+}
+i.contact-icon {
+    width: 30px;
+}
+.contact-content {
+    padding: 32px 0px;
+}
+input.form-control {
+    padding: 9px 8px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    margin: 4px 0px;
+    width: 100%;
+}
+#content .form-button {
+    display: inline;
+    padding: 4px 8px ;
+    float: right;
+    margin: 4px;
+    width: 70px ;
+    border: none;
+}
+#content .map-section {
+    width : 100%;
+}
+/* --------------contact css---------------- */
+#content .contact {
+
+}
+ 
+/* -------------footer------------------------ */
+#footer { 
+    text-align: center;
+    padding: 64px 16px;
+    color: rgba(0,0,0,0.6);
+}
+#footer .social-lists i {
+    font-size: 24px;
+    /* color: #000;
+    opacity: 0.8; */
+    color: rgba(0,0,0,0.6);
+}
+#footer .social-lists i:hover {
+   color: rgba(0,0,0,0.4);
+}
+
+#footer p,
+#footer a {
+    margin: 15px 0px;
+    font-size: 15px;
+    color: rgba(0,0,0,0.6);
+}
